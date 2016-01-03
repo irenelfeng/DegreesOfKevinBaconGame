@@ -26,7 +26,8 @@ Uses BFS on implementation of Graphs in Java to find the shortest relation from 
 
 ## SAMPLE OUTPUT:
 
-```Pick an actor as the root of the BFS tree:
+```
+Pick an actor as the root of the BFS tree:
 Kevin Bacon
 Enter an actor to show their path to Kevin Bacon
 Or, to quit the program and see some amazing, surprising, astonishing stunning and mind-blowing statistics about the graph with root actor Kevin Bacon, press the return key.
@@ -44,7 +45,8 @@ The standard deviation from Kevin Bacon is 0.9199448911756116
 
 ## Another Sample Output: 
 
-```Pick an actor as the root of the BFS tree:
+```
+Pick an actor as the root of the BFS tree:
 Robert De Niro
 Enter an actor to show their path to Robert De Niro
 Or, to quit the program and see some amazing, surprising, astonishing stunning and mind-blowing statistics about the graph with root actor Robert De Niro, press the return key.
