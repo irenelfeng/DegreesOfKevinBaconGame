@@ -25,6 +25,7 @@ Uses BFS on implementation of Graphs in Java to find the shortest relation from 
  	- Game will keep asking for more actors to map out path to root actor until return key is pressed. 
 
 ## SAMPLE OUTPUT:
+
 ```Pick an actor as the root of the BFS tree:
 Kevin Bacon
 Enter an actor to show their path to Kevin Bacon
@@ -42,6 +43,7 @@ The standard deviation from Kevin Bacon is 0.9199448911756116
 ```
 
 ## Another Sample Output: 
+
 ```Pick an actor as the root of the BFS tree:
 Robert De Niro
 Enter an actor to show their path to Robert De Niro
