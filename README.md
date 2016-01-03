@@ -38,7 +38,8 @@ Enter an actor to show their path to Kevin Bacon
 The actors with the largest distance from Kevin Bacon are [Nita Naldi: 8, John F. Hamilton: 8, Bernhard Goetzke: 8, Sara Allgood: 8, Charles Paton: 8, John Longden: 8, Jobyna Ralston: 8, Clara Bow: 8, Richard Arlen: 8]
 The average distance from Kevin Bacon is 3.281024819855885
 The median distance from Kevin Bacon is 3.0
-The standard deviation from Kevin Bacon is 0.9199448911756116```
+The standard deviation from Kevin Bacon is 0.9199448911756116
+```
 
 ## Another Sample Output: 
 ```Pick an actor as the root of the BFS tree:
@@ -49,7 +50,8 @@ Or, to quit the program and see some amazing, surprising, astonishing stunning a
 The actors with the largest distance from Robert De Niro are [Nita Naldi: 7, John F. Hamilton: 7, Bernhard Goetzke: 7, Sara Allgood: 7, Charles Paton: 7, John Longden: 7, Jobyna Ralston: 7, Clara Bow: 7, Richard Arlen: 7]
 The average distance from Robert De Niro is 3.1134240725914064
 The median distance from Robert De Niro is 3.0
-The standard deviation from Robert De Niro is 0.8460010910452785```
+The standard deviation from Robert De Niro is 0.8460010910452785
+```
 
 ## Boundary Cases: 
 - Asks for a new actor if an actor cannot be found
