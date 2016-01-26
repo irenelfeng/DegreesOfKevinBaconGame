@@ -340,7 +340,7 @@ public class BaconGame<V, E> {
 			
 				while(!bg.vertexInGraph(root)){
 					//gives a suggestion if what the user typed in was close to an actor in the graph
-					String suggestion = corrector.correct(root);
+					String suggestion = corrector.correct(root); //long time
 
 					if(suggestion!=null)
 						System.out.println("Possible mispelling. Try " + suggestion + ", or type another name.");
@@ -358,26 +358,34 @@ public class BaconGame<V, E> {
 				String actor = userInput.nextLine();
 				
 				while(!actor.equals("")){
+					if(!bg.vertexInGraph(actor)){
+						//String suggestion = corrector.correct(root);
+						// if(suggestion!=null){
+						// 	System.out.println("Possible mispelling. Try " + suggestion + ", or type another name.");
+					 // 		actor = userInput.nextLine();
+					 // 	}
+						System.err.println("This actor is not in the database. Try again.");
+
+					}else{
 					List<Edge<String>> test = playGame.getPath(actor);
 				
-					if(test==null){
-						System.err.println("Your actor doesn't seem to be connected with " + root + ". Try again.");
-						//gives a suggestion if what the user typed in was close to an actor in the graph
-						String suggestion = corrector.correct(root);
-						if(suggestion!=null)
-							System.out.println("Possible mispelling. Try " + suggestion + ", or type another name.");
-					 		actor = userInput.nextLine();
+						if(test==null){
+							System.err.println("Your actor doesn't seem to be connected with " + root + ". Try again.");
+							//gives a suggestion if what the user typed in was close to an actor in the graph
+							
 
-					}	
-					else{
-						System.out.println(actor + "'s number is " + test.size());
-						for(Edge<String> e : test){
-							System.out.println(bg.endVertices(e)[0] + " appeared in " + e.element() + " with " + bg.endVertices(e)[1]);
+						}	
+						else{
+							System.out.println(actor + "'s number is " + test.size());
+							for(Edge<String> e : test){
+								System.out.println(bg.endVertices(e)[0] + " appeared in " + e.element() + " with " + bg.endVertices(e)[1]);
+							}
+
 						}
-					//repeat
-					System.out.println("Enter an actor to show their path to " + root);
-					actor = userInput.nextLine();
-				}
+					}
+						//repeat
+						System.out.println("Enter an actor to show their path to " + root);
+						actor = userInput.nextLine();
 				}
 				
 				
